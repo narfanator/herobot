@@ -1,0 +1,11 @@
+name: HeroBot
+description:
+author: narfanator@gmail.com
+email: narfanator@gmail.com
+slackscopes:
+  - bot
+  - commands
+  - reactions:write
+health-check:
+  protocol: http
+  path: /healthz

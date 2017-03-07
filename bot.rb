@@ -1,7 +1,9 @@
-require 'slack-ruby-bot'
-
 require 'certified'
 require 'dotenv/load'
+
+ENV["SLACK_API_TOKEN"] ||= ENV["SLACK_TOKEN"]
+
+require 'slack-ruby-bot'
 
 class WeatherBot < SlackRubyBot::Bot
   help do
